@@ -80,9 +80,7 @@ Bias correction is performed with the [SBCK](https://github.com/yrobink/SBCK) Py
 ## 👤 Author & Contact
 
 **Hajar BADRAOUI**  
-M2 Applied Statistics & Decision Analysis  
-Université de Caen Normandie, France  
-Data Analyst Intern @ ARVALIS  
+France   
 📧 hajar.badraoui01@gmail.com  
 🔗 [github.com/badraouihajar](https://github.com/badraouihajar)
 
