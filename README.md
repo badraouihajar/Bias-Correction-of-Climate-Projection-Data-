@@ -49,7 +49,6 @@ Bias correction is performed with the [SBCK](https://github.com/yrobink/SBCK) Py
 - **Enhanced data quality for agriculture**: Results directly support the development of reliable agro-climatic indicators and risk assessment tools for stakeholders.
 - **Open science and reproducibility**: All code, data processing steps, and analyses are documented and reproducible for the research and agricultural communities.
 
-## 📚 References
 
 ## 📚 References
 
