@@ -10,10 +10,8 @@
 ## 🌾 Project Context – CLIMODIF
 
 This repository was developed during my master’s internship at ARVALIS – Institut technique agricole, within the framework of the **CLIMODIF** project.  
-**CLIMODIF** aims to provide the agricultural sector with robust and actionable climate intelligence by producing, correcting, and distributing high-resolution climate projections for France.
-A major challenge addressed by the project is the systematic bias present in raw outputs from regional climate models, which can distort risk assessments and the design of adaptation strategies for crops and agricultural practices.
 
-In this context, CLIMODIF seeks to equip farmers with decision-support tools to help them adapt their practices in the face of climate change. Climate models play a key role by providing essential information to anticipate and facilitate this transition.
+**CLIMODIF**  seeks to equip farmers with decision-support tools to help them adapt their practices in the face of climate change. Climate models play a key role by providing essential information to anticipate and facilitate this transition.
 My work is part of this ambition: contributing to the bias correction of climate projections and developing autonomy in the application of these corrections, in order to provide more reliable and directly usable data for the agricultural sector.
 
 
