@@ -51,7 +51,7 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
   - Extraction des données journalières (1976–2100) pour 40 points de la grille SAFRAN, réparties sur le territoire Français.
   - Correction des variables : `pr`, `sfcWind`, `tasmin`, `tasmax`, `hurs`, `rsds`, `etpFAO (calculé)`
   - Correction mensuelle sur fenêtres glissantes de 30 ans
-  - Post-traitement spécifique pour la précipitation (`log-exp`, SSR)
+  - Post-traitement spécifique pour la précipitation (`log-exp`, SSR : Singularity Stochastic Removal)
 
 ---
 
