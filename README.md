@@ -76,7 +76,7 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 | `boigneville-CNRM-CERFACS-CM5_CNRM-ALADIN63-rcp45.csv`| Données du modèle climatique (projection RCP 4.5, ALADIN63)                 |
 | `boigneville_SAFRAN.csv`                            | Données de référence SAFRAN (Météo-France) pour Boigneville                 |
 | `grilleSafran_utile_drias2021.csv`                  | Grille spatiale pour l’appariement SAFRAN/EURO-CORDEX                             |
-| `Collecte.ipynb`                                    | Notebook Jupyter : extraction et préparation des données                    |
+| `Collecte.ipynb`                                    | Notebook Jupyter : extraction des données d'après la plateforme CDS : Climate Data Store                    |
 | `Debiaisage.ipynb`                                  | Notebook Jupyter : analyse des méthodes de correction de biais              |
 | `README.md`                                         | Ce fichier de présentation (guide du dépôt)                                 |
 
