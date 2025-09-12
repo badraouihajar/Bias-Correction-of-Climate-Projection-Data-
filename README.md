@@ -32,13 +32,13 @@ Mon travail porte sur la correction des biais des projections climatiques, pour 
 
 ## 🧑‍💻 Motivation & Objectifs
 
-Les simulations issues des modèles climatiques (EURO-CORDEX, etc.) présentent des biais par rapport aux données de référence SAFRAN (Météo-France).  
+Les simulations issues des modèles climatiques (EURO-CORDEX) présentent des biais par rapport aux données de référence SAFRAN (Météo-France).  
 Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 
 **Objectifs du projet :**
-- Évaluer et comparer des méthodes avancées de correction de biais, univariée (**CDF-t**) et multivariée (**dOTC**)
-- Quantifier les améliorations pour chaque variable agro-climatique (précipitation, température, vent, etc.)
-- Fournir un workflow reproductible et automatisé, directement réutilisable par les chercheurs, agronomes et décideurs
+- Évaluer et comparer des méthodes avancées de correction de biais appliquées aux projections climatiques, notamment une méthode univariée (CDF-t) et une méthode multivariée (dOTC).
+- Gagner en autonomie dans l’application, la validation et l’automatisation de ces méthodes statistiques, afin de pouvoir traiter différents jeux de données.
+- Intégrer les données climatiques corrigées dans des modèles agronomiques internes, pour analyser l’impact concret des corrections sur des indicateurs agronomiques : stades de développement des cultures, stress hydrique etc.
 
 ---
 
@@ -46,10 +46,10 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 
 - **Correction de biais** réalisée avec [SBCK](https://github.com/yrobink/SBCK)
   - `CDF-t` : correction univariée par ajustement des distributions
-  - `dOTC` : correction multivariée via transport optimal (préservation des dépendances inter-variables)
+  - `dOTC` : correction multivariée via transport optimal (préservation des dépendances inter-variables et corrélations spatiales)
 - **Workflow :**
-  - Extraction des données journalières (1976–2100) pour 40 stations en France
-  - Correction des variables : `pr`, `sfcWind`, `tasmin`, `tasmax`, `hurs`, `rsds`, `ETP`
+  - Extraction des données journalières (1976–2100) pour 40 points de la grille SAFRAN, réparties sur le territoire Français.
+  - Correction des variables : `pr`, `sfcWind`, `tasmin`, `tasmax`, `hurs`, `rsds`, `etpFAO (calculé)`
   - Correction mensuelle sur fenêtres glissantes de 30 ans
   - Post-traitement spécifique pour la précipitation (`log-exp`, SSR)
 
@@ -59,9 +59,9 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 
 - **Comparaison rigoureuse** : Analyse détaillée CDF-t vs dOTC (biais, variance, dépendances)
 - **Validation croisée** : Analyse de la capacité des corrections à préserver les tendances des modèles climatiques
-- **Transférabilité** : Workflow facilement adaptable à d’autres stations, variables, ou régions
+- **Transférabilité** : Workflow facilement adaptable à d’autres stations ou variables
 - **Qualité accrue pour l’agriculture** : Résultats utilisables pour les indicateurs de risque agro-climatique
-- **Reproductibilité & ouverture** : Tout est documenté pour la communauté scientifique et agricole
+
 
 ---
 
@@ -69,7 +69,7 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 
 | Fichier / Dossier                                   | Description                                                                 |
 |-----------------------------------------------------|-----------------------------------------------------------------------------|
-| `40stations.png`                                    | Carte des 40 stations météorologiques                                       |
+| `40stations.png`                                    | Carte des 40 points de la grille SAFRAN                                       |
 | `CDFT_finally_all_vars_1976_2100.csv`               | Données corrigées par la méthode CDF-t (1976–2100)                          |
 | `dOTC_final_all_vars_1976_2100.csv`                 | Données corrigées par la méthode dOTC (1976–2100)                           |
 | `boigneville-CNRM-CERFACS-CM5_CNRM-ALADIN63-hist.csv` | Données du modèle climatique (historique, ALADIN63)                         |
@@ -77,7 +77,7 @@ Ces biais faussent l’évaluation des risques futurs et la prise de décision.
 | `boigneville_SAFRAN.csv`                            | Données de référence SAFRAN (Météo-France) pour Boigneville                 |
 | `grilleSafran_utile_drias2021.csv`                  | Grille spatiale pour l’appariement SAFRAN/EURO-CORDEX                             |
 | `Collecte.ipynb`                                    | Notebook Jupyter : extraction et préparation des données                    |
-| `Debiaisage.ipynb`                                  | Notebook Jupyter : correction des biais                                     |
+| `Debiaisage.ipynb`                                  | Notebook Jupyter : analyse des méthodes de correction de biais              |
 | `README.md`                                         | Ce fichier de présentation (guide du dépôt)                                 |
 
 ---
