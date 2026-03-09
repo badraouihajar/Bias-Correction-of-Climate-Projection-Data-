@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Hajar BADRAOUI</b> <br>
-  Stagiaire Data Analyst @ ARVALIS – 2025
+  Study Engineer @ ARVALIS – 2025
 </p>
 
 ---
